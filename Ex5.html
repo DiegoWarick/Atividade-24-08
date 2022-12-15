@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Ex 5</title>
+    <script lang="Javascript">
+        function media()
+        {
+            var a, b, c, d, m;
+            a = parseInt(document.Form.a.value);
+            b = parseInt(document.Form.b.value);
+            c = parseInt(document.Form.c.value);
+            d = parseInt(document.Form.d.value);
+            m = (a + b + c + d) / 4;
+           
+            document.getElementById("x").innerHTML = "A média aritmética destes 4 números é: " + m;
+        }
+    </script>
+</head>
+<body>
+    <form name="Form">
+        Número 1: <input type="text" name="a" value="0"><br>
+        Número 2: <input type="text" name="b" value="0"><br>
+        Número 3: <input type="text" name="c" value="0"><br>
+        Número 4: <input type="text" name="d" value="0"><br>
+        <input type="button" name="botao" value="Calcular média" onclick="media();">
+    </form>
+
+<p id="x"></p>
+    
+</body>
+</html>

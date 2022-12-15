@@ -1,0 +1,100 @@
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Ex 17</title>
+    <script lang="Javascript">
+        var x, r, i, j = 0;
+        function enviar()
+        {
+            r = 0, j = 0;
+            x = document.getElementById("a").value;
+            if (x > 0) {
+                    for (i = 1; i < 21; i++) {
+                        if (i < 11) {
+                        document.getElementById(i).innerHTML = x + " * " + i;
+                        } else {
+                            j++;
+                            r = x * j;
+                            document.getElementById(i).innerHTML = r;
+                        }
+                    }
+            }
+            
+        }
+    </script>
+    <style>
+        table#tabela {
+ font-family: Arial;
+ font-size: 20px;
+ border: 1px solid black;
+ border-collapse: collapse;
+ }
+ table#tabela td{
+ text-align: center;
+ border: 1px solid black;
+ }
+     </style>
+</head>
+<body>
+    <form name="Form">
+        Número (positivo): <input type="text" id="a" value="0"><br>
+        <input type="button" name="botao" value="Gerar tabuada" onclick="enviar();">
+    </form>
+    
+
+<div id="x">
+    <table id="tabela">
+        <tr>
+            <td id="1"></td>
+            <td id="11"></td>
+        </tr>
+        <tr>
+            <td id="2"></td>
+            <td id="12"></td>
+   
+        </tr>
+        <tr>
+            <td id="3"></td>
+            <td id="13"></td>
+   
+        </tr>
+        <tr>
+            <td id="4"></td>
+            <td id="14"></td>
+   
+        </tr>
+        <tr>
+            <td id="5"></td>
+            <td id="15"></td>
+   
+        </tr>
+        <tr>
+            <td id="6"></td>
+            <td id="16"></td>
+   
+        </tr>
+        <tr>
+            <td id="7"></td>
+            <td id="17"></td>
+   
+        </tr>
+        <tr>
+            <td id="8"></td>
+            <td id="18"></td>
+   
+        </tr>
+        <tr>
+            <td id="9"></td>
+            <td id="19"></td>
+   
+        </tr>
+        <tr>
+            <td id="10"></td>
+            <td id="20"></td>
+   
+        </tr>
+    </table>
+</div>
+    
+</body>
+</html>
